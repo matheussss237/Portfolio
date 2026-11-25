@@ -57,7 +57,7 @@ assets/
 ## Como editar
 
 - **Textos:** estão todos no `index.html`.
-- **Cores:** ficam em variáveis no topo do `css/style.css` (`:root` é o tema escuro e `[data-theme="light"]` é o claro).
+- **Cores:** paleta #651424 (vinho), #FFFFFF (branco) e #FF5825 (laranja), em variáveis no topo do `css/style.css` (`:root` é o tema escuro e `[data-theme="light"]` é o claro).
 - **Novo projeto:** copie um `<article class="work-card">` da seção "Mais projetos" no `index.html` e coloque a imagem (16:10) em `assets/img/`.
 - **Currículo:** edite `assets/cv/cv.html`, abra no navegador, use *Imprimir → Salvar como PDF* (A4, sem margens, com "gráficos de fundo" ligado) e salve por cima de `assets/cv/Matheus-Henrique-CV.pdf`.
 
