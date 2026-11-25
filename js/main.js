@@ -19,7 +19,7 @@ const themeBtn = document.querySelector(".theme-toggle");
 
 function applyTheme(theme) {
   root.dataset.theme = theme;
-  document.querySelector('meta[name="theme-color"]').content = theme === "light" ? "#f0fdf4" : "#071a12";
+  document.querySelector('meta[name="theme-color"]').content = theme === "light" ? "#f7f3fd" : "#0b0713";
   try { localStorage.setItem("tema", theme); } catch (e) {}
 }
 
@@ -306,10 +306,16 @@ function scrollAnimations() {
     tl.to({}, { duration: 0.4 }); // pequena pausa no final antes de soltar o pin
   });
 
-  /* --- "Em breve" --- */
-  gsap.from(".soon-card", {
-    y: 80, scale: 0.95, autoAlpha: 0, duration: 1.2, ease: "expo.out",
-    scrollTrigger: { trigger: ".soon-card", start: "top 85%" }
+  /* --- Mais projetos: cards entram em sequência --- */
+  ScrollTrigger.batch(".work-card", {
+    start: "top 88%",
+    onEnter: (els) => gsap.from(els, { y: 90, autoAlpha: 0, stagger: 0.12, duration: 1.2, ease: "expo.out" })
+  });
+  gsap.utils.toArray(".work-media img").forEach((img) => {
+    gsap.fromTo(img, { clipPath: "inset(0% 0% 100% 0%)" }, {
+      clipPath: "inset(0% 0% 0% 0%)", duration: 1.2, ease: "expo.inOut",
+      scrollTrigger: { trigger: img, start: "top 90%" }
+    });
   });
 
   /* --- Formação: linha do tempo se desenha com scrub --- */

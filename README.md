@@ -1,8 +1,17 @@
 # Portfólio — Matheus Henrique
 
-Portfólio pessoal de **Matheus Henrique**, desenvolvedor back-end em formação (Java, Spring Boot e Segurança da Informação), de Gama — DF.
+Portfólio pessoal de **Matheus Henrique**, desenvolvedor back-end em formação (Java, Spring Boot, Node.js e Segurança da Informação), de Gama — DF. Estudante do 3º semestre de Engenharia de Software na UniCEPLAC e técnico em Desenvolvimento de Sistemas pelo Senac-DF.
 
-🔗 **Site:** https://matheussss237.github.io/Gsap/
+🔗 **Site:** https://matheussss237.github.io/portfolio/
+
+## Projetos apresentados
+
+| Projeto | Stack |
+|---|---|
+| [Brasília Participa](https://github.com/matheussss237/Brasilia-Participa) (destaque) | Node.js, Express, MongoDB Atlas, JavaScript, Leaflet |
+| [Lumi](https://github.com/matheussss237/lumi) | Java 21, JavaFX, Spring Boot, MongoDB Atlas, Groq, RAG |
+| Fato Real (repositório privado) | Angular, TypeScript, Supabase |
+| [Padaria API — H2](https://github.com/matheussss237/Padaria_java_H2) e [MongoDB](https://github.com/matheussss237/Padaria_java_mongoDB) | Java 17, Spring Boot, Spring Security, Docker |
 
 ## Tecnologias
 
@@ -26,6 +35,7 @@ Portfólio pessoal de **Matheus Henrique**, desenvolvedor back-end em formação
 | Números | Contadores animados | `snap` |
 | Stack | Faixas infinitas que aceleram com a velocidade do scroll | `getVelocity()` |
 | Projeto | A seção fica fixa e as telas do sistema trocam com a rolagem | `pin` + `scrub` + clip-path |
+| Mais projetos | Cards entram em sequência e as imagens se revelam | `ScrollTrigger.batch`, clip-path |
 | Formação | A linha do tempo se desenha | `scrub` |
 | Mouse | Cursor personalizado, botões magnéticos, cards 3D | `quickTo` |
 
@@ -48,7 +58,7 @@ assets/
 
 - **Textos:** estão todos no `index.html`.
 - **Cores:** ficam em variáveis no topo do `css/style.css` (`:root` é o tema escuro e `[data-theme="light"]` é o claro).
-- **Novo projeto:** copie o bloco `<section class="projects">` no `index.html`.
+- **Novo projeto:** copie um `<article class="work-card">` da seção "Mais projetos" no `index.html` e coloque a imagem (16:10) em `assets/img/`.
 - **Currículo:** edite `assets/cv/cv.html`, abra no navegador, use *Imprimir → Salvar como PDF* (A4, sem margens, com "gráficos de fundo" ligado) e salve por cima de `assets/cv/Matheus-Henrique-CV.pdf`.
 
 ## Rodar localmente
