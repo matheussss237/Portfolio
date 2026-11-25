@@ -1,25 +1,25 @@
 /* =========================================================
    Portfólio — Matheus Henrique
-   Tema escuro (padrão) em preto e verde-limão + tema claro
+   Tema escuro (padrão) em preto e azul-violeta + tema claro
    ========================================================= */
 
 /* ---------- Tokens de cor ---------- */
 :root {
-  /* Paleta: #101010 (preto) · #FFFFFF (branco) · #C8FF00 (verde-limão) */
-  --bg: #101010;
-  --bg-2: #161616;
-  --surface: #1b1b1b;
-  --surface-2: #242424;
+  /* Paleta: #020002 (preto) · #FFFFFF (branco) · #6E74F7 (azul-violeta) */
+  --bg: #020002;
+  --bg-2: #0a090f;
+  --surface: #110f18;
+  --surface-2: #1a1824;
   --line: rgba(255, 255, 255, 0.1);
-  --line-strong: rgba(200, 255, 0, 0.35);
+  --line-strong: rgba(110, 116, 247, 0.4);
   --txt: #ffffff;
-  --muted: #a3a3a3;
-  --accent: #c8ff00;
-  --accent-2: #b4e600;
-  --accent-3: #e4ff7a;
-  --accent-txt: #c8ff00;
-  --on-accent: #101010;
-  --glow: rgba(200, 255, 0, 0.22);
+  --muted: #a3a3b3;
+  --accent: #6e74f7;
+  --accent-2: #5a60f0;
+  --accent-3: #a5a9fb;
+  --accent-txt: #6e74f7;
+  --on-accent: #ffffff;
+  --glow: rgba(110, 116, 247, 0.35);
   --shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.7);
   --grid: rgba(255, 255, 255, 0.04);
   --dark-icon-filter: invert(1);
@@ -37,21 +37,21 @@
 
 :root[data-theme="light"] {
   --bg: #ffffff;
-  --bg-2: #f5f5f5;
+  --bg-2: #f5f5fe;
   --surface: #ffffff;
-  --surface-2: #f2f2f2;
-  --line: rgba(16, 16, 16, 0.1);
-  --line-strong: rgba(16, 16, 16, 0.22);
-  --txt: #101010;
-  --muted: #5c5c5c;
-  --accent: #c8ff00;
-  --accent-2: #b4e600;
-  --accent-3: #8fb800;
-  --accent-txt: #4d6600;
-  --on-accent: #101010;
-  --glow: rgba(200, 255, 0, 0.35);
-  --shadow: 0 30px 70px -25px rgba(16, 16, 16, 0.25);
-  --grid: rgba(16, 16, 16, 0.05);
+  --surface-2: #f0f1fe;
+  --line: rgba(2, 0, 2, 0.1);
+  --line-strong: rgba(110, 116, 247, 0.35);
+  --txt: #020002;
+  --muted: #5c5c6b;
+  --accent: #6e74f7;
+  --accent-2: #5a60f0;
+  --accent-3: #6e74f7;
+  --accent-txt: #4a50e0;
+  --on-accent: #ffffff;
+  --glow: rgba(110, 116, 247, 0.25);
+  --shadow: 0 30px 70px -25px rgba(2, 0, 2, 0.25);
+  --grid: rgba(2, 0, 2, 0.05);
   --dark-icon-filter: none;
   color-scheme: light;
 }
@@ -140,18 +140,18 @@ ul { list-style: none; }
    ========================================================= */
 .loader {
   position: fixed; inset: 0; z-index: 1000;
-  background: #101010; color: #ffffff;
+  background: #020002; color: #ffffff;
   display: flex; align-items: flex-end;
   padding: var(--pad);
   clip-path: inset(0 0 0 0);
 }
 .loader-inner { width: 100%; display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; flex-wrap: wrap; }
-.loader-line { font-family: var(--font-mono); font-size: clamp(0.85rem, 1.6vw, 1.05rem); color: #a3a3a3; }
-.loader-line .prompt { color: #c8ff00; }
-.loader-cmd::after { content: "▍"; color: #c8ff00; animation: blink 0.8s steps(1) infinite; margin-left: 2px; }
+.loader-line { font-family: var(--font-mono); font-size: clamp(0.85rem, 1.6vw, 1.05rem); color: #a3a3b3; }
+.loader-line .prompt { color: #6e74f7; }
+.loader-cmd::after { content: "▍"; color: #6e74f7; animation: blink 0.8s steps(1) infinite; margin-left: 2px; }
 .loader-count { font-family: var(--font-display); font-weight: 700; font-size: clamp(4rem, 16vw, 13rem); line-height: 0.85; letter-spacing: -0.05em; }
 .loader-bar { position: absolute; left: 0; right: 0; top: 0; height: 3px; background: rgba(255, 255, 255, 0.06); }
-.loader-bar i { display: block; height: 100%; background: linear-gradient(90deg, #b4e600, #c8ff00); transform-origin: left; transform: scaleX(0); }
+.loader-bar i { display: block; height: 100%; background: linear-gradient(90deg, #5a60f0, #a5a9fb); transform-origin: left; transform: scaleX(0); }
 
 @keyframes blink { 50% { opacity: 0; } }
 
